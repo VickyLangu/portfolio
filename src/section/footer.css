@@ -1,0 +1,45 @@
+footer {
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 2, 2) 19.4%,
+    rgb(189, 23, 125) 50.4%,
+    rgb(6, 2, 2) 73.56%
+  );
+  padding: 20px;
+  text-align: center;
+}
+
+.first-letter {
+  color: rgb(204, 191, 191);
+}
+.first-letter:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+.nav {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+.foot {
+  font-size: 49px;
+  float: left;
+}
+.links {
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+}
+
+.nav a {
+  color: var(--primary-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+.social-media a {
+  font-size: var(--links-font-size);
+}

@@ -1,0 +1,355 @@
+@import url("section/header.css");
+@import url("section/about.css");
+@import url("section/portfolio.css");
+@import url("section/inquery.css");
+@import url("section/footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --primary-color: #f2f2f2;
+  --secondary-color: #ec008c;
+  --content-font: 18px;
+  --links-font-size: 30px;
+  --paragraph-font: 20px;
+  --border-color: #ccc;
+}
+body {
+  background: linear-gradient(
+    112.1deg,
+    rgb(12, 12, 12) 40.4%,
+    rgb(48, 48, 49) 70.2%
+  );
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  fill: var(--primary-color); /* Set the text color to white */
+  font-size: 20px; /* Set the font size for the percentage text */
+  font-weight: bold;
+}
+
+.column-header {
+  margin-top: 10px;
+}
+
+.second-letter {
+  color: var(--secondary-color);
+  margin-left: -15px;
+}
+
+button {
+  font-size: 30px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 2, 2) 19.4%,
+    rgb(189, 23, 125) 50.4%,
+    rgb(6, 2, 2) 73.56%
+  );
+  border-radius: 10px;
+  color: var(--primary-color);
+  width: 275px;
+}
+
+button:hover {
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 2, 2) 19.4%,
+    rgb(6, 2, 2) 73.56%
+  );
+  color: var(--primary-color);
+  box-shadow: 1px 1px 2px 2px var(--secondary-color);
+  cursor: pointer;
+}
+
+.hide-nav .navigation {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  body {
+    line-height: 1.6;
+    font-size: 16px; /* Adjust the base font size for smaller screens */
+  }
+  /* .header {
+    margin-top: 50px;
+    position: sticky;
+    top: 0;
+  }
+  h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .background-hero img {
+    display: none;
+  }
+
+  .head {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  } */
+  .container-one {
+    margin-bottom: 100px;
+    margin-top: 140px;
+  }
+  .background-image img {
+    margin-left: 0; /* Remove negative margin for small screens */
+    width: 150px; /* Adjust the image size for small screens */
+  }
+  .about-me {
+    margin-top: 20px;
+    /* font-size: 14px; Adjust the font size for small screens */
+    flex-direction: column;
+    display: flex;
+  }
+  .contain-paragraph {
+    max-width: 320px;
+    width: 100%;
+    margin-left: 0; /* Remove margin for small screens */
+    font-size: 16px; /* Adjust the font size for small screens */
+  }
+  .contain-paragraph a {
+    font-size: 20px; /* Adjust the font size for small screens */
+    width: 150px; /* Adjust the link width for small screens */
+  }
+  .contain-paragraph .row {
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+  }
+
+  .portfolio-projects .row {
+    flex-direction: column; /* Stack columns vertically */
+    font-size: 16px;
+  }
+
+  .portfolio-projects .column {
+    width: 70%;
+    padding: 5px;
+    padding-bottom: 5px;
+  }
+
+  .container-three {
+    width: 90%;
+    margin-left: 25px;
+  }
+  .footer {
+    width: 100%;
+  }
+  .container-three .row {
+    flex-direction: column;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .container-three .card {
+    width: 80%;
+  }
+  .name,
+  .phone,
+  .email,
+  .from {
+    margin-left: 50px;
+  }
+
+  .circle-row {
+    flex-direction: column; /* Change to column layout for small screens */
+  }
+
+  .circle-row li {
+    width: 100%; /* Show two columns on small screens */
+    margin-bottom: 15px; /* Optional spacing between rows */
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row; /* Align the two .circle-row sections horizontally */
+    justify-content: center; /* Optional, to center the content horizontally */
+  }
+
+  .closing h1 {
+    width: 100%;
+  }
+
+  .closing p {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /* .hamburger {
+    display: block; /* Show the hamburger icon on smaller screens 
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 1001;
+    cursor: pointer;
+  } */
+
+  /* .navigation {
+    flex-direction: column; /* Display links in a column 
+    align-items: flex-start; /* Align links to the left 
+    /* padding-top: 20px; 
+    top: 5px; /* Adjust the top position to prevent overlap with the hamburger icon 
+    background: linear-gradient(
+      109.6deg,
+      rgb(6, 2, 2) 50.4%,
+      rgb(189, 23, 125) 98.8%
+    );
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    margin-bottom: -400px;
+    width: 150px;
+    position: fixed;
+    z-index: 1000;
+  } */
+
+  /* .navigation.active {
+    transform: translateX(0); /* Show the navigation links when active 
+  }
+
+  .navigation a {
+    /* margin: 10px 0; Add some vertical spacing between links 
+    font-size: 18px;
+  }
+
+  .navigation a {
+    float: none;
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 14px; /* Adjust the font size for navigation links 
+  } */
+  /* .social {
+    position: fixed; /* Position the social links fixed to the viewport 
+    top: 130px;
+    right: 5px; /* Adjust the right position as needed 
+    display: flex;
+    flex-direction: column; /* Display social links in a column 
+    align-items: center;
+    z-index: 999; /* Ensure the social links appear above other elements 
+  }
+  .social ol {
+    width: 80px;
+  } */
+
+  .portfolio h1 {
+    font-size: 30px; /* Adjust the font size for portfolio section heading */
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-projects .card {
+    padding: 5px; /* Adjust the padding for portfolio cards */
+  }
+
+  .portfolio-projects a {
+    font-size: 16px; /* Adjust the font size for portfolio project links */
+    margin-top: 8px;
+    float: right;
+  }
+
+  /* button {
+    font-size: 20px; /* Adjust the font size for buttons
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .header button {
+    margin-top: -50px;
+    width: 130px;
+    font-size: 15px;
+  } */
+
+  .contain-paragraph h2 {
+    font-size: 20px; /* Adjust the font size for section headings */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contain-paragraph a {
+    font-size: 13px; /* Adjust the font size for buttons within the paragraph */
+    width: 130px;
+  }
+
+  .inquire h2 {
+    font-size: 20px; /* Adjust the font size for the "Inquire" section heading */
+    margin-bottom: 20px;
+  }
+
+  .inquire form {
+    width: 80%;
+  }
+
+  .inquire input,
+  .inquire textarea {
+    width: 100%;
+  }
+
+  .inquire button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .nav a {
+    font-size: 14px; /* Adjust the font size for navigation links */
+  }
+
+  .social-media a {
+    font-size: 20px; /* Adjust the font size for social media icons */
+  }
+
+  .foot {
+    font-size: 24px; /* Adjust the font size for the footer text */
+    float: left;
+  }
+
+  .closing {
+    margin-bottom: 30px;
+    width: 90%;
+    word-wrap: break-word;
+  }
+  .closing button {
+    max-width: 140px;
+  }
+
+  .first-letter {
+    font-size: 24px; /* Adjust the font size for the first letter in the footer */
+  }
+
+  .portfolio-projects hr {
+    width: 90%; /* Adjust the width of the horizontal line */
+  }
+
+  .portfolio ol li {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .container-three h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 20px; /* Adjust the font size for section headings */
+  }
+  .content a {
+    /* Remove float and adjust margin */
+    margin-top: 10px;
+    margin-right: 0; /* Remove negative margin */
+    color: var(--secondary-color);
+  }
+}

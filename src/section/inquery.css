@@ -1,0 +1,68 @@
+.inquire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.inquire h2 {
+  margin-bottom: 20px;
+  font-size: var(--links-font-size);
+}
+.inquire form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 70px;
+  width: 500px;
+}
+.inquire input,
+.inquire textarea {
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.inquire button {
+  width: 500px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--paragraph-font);
+  margin-bottom: 30px;
+}
+
+.closing {
+  margin-bottom: 50px;
+  width: 65%;
+  word-wrap: break-word;
+}
+.closing h1 {
+  width: 80%;
+  text-shadow: 10px 10px 15px var(--secondary-color);
+}
+.closing p {
+  margin-top: 20px;
+  width: 50%;
+  font-size: var(--paragraph-font);
+}
+.closing button {
+  margin-left: auto;
+  display: block;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+#contact-info {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}

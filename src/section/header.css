@@ -1,0 +1,251 @@
+.logo {
+  display: inline;
+  position: relative;
+  top: 0;
+  left: 0;
+  line-height: 38.73px;
+  margin-left: 30px;
+  color: var(--primary-color);
+  font-size: 49px; /* Add a font size to the logo */
+}
+.second-letter {
+  color: var(--secondary-color);
+  margin-left: -15px;
+}
+.hamburger {
+  display: none; /* Hide the hamburger icon by default on larger screens */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 5px;
+  border-radius: 3px;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 2, 2) 50.4%,
+    rgb(189, 23, 125) 98.8%
+  );
+}
+.navigation a {
+  float: right;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: var(--content-font);
+  margin-right: 50px;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+button:hover {
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 2, 2) 19.4%,
+    rgb(6, 2, 2) 73.56%
+  );
+  color: var(--primary-color);
+  box-shadow: 1px 1px 2px 2px var(--secondary-color);
+  cursor: pointer;
+}
+.social {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 80px;
+  margin-right: 10px;
+  transition: 0.5ms;
+}
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ol li {
+  display: block;
+}
+ol li a {
+  font-size: var(--links-font-size);
+  color: var(--primary-color);
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+ol li a i {
+  width: 70px;
+  font-size: var(--links-font-size);
+  text-align: center;
+}
+
+ol li:hover a {
+  color: var(--secondary-color);
+  font-size: 33px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header p,
+.header h1,
+.header h2 {
+  margin: 5px; /* Add some space between elements */
+}
+.background-hero {
+  position: absolute; /* Use absolute positioning for the container */
+  right: 200px; /* Align the container to the right end of the screen */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  /* Use relative width to take 30% of the screen */
+}
+.background-hero img {
+  box-shadow: 3px 3px 5px 5px var(--secondary-color);
+  width: 100%; /* Image will take the full width of the container */
+  max-width: 300px;
+  height: auto; /* Image will maintain its aspect ratio */
+  object-fit: cover; /* Image will cover the container while maintaining aspect ratio */
+  border-radius: 10px;
+  margin-top: -50px;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 200px;
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 15px;
+  margin-bottom: -20px;
+  text-shadow: 10px 10px 15px var(--secondary-color);
+}
+.header h2 {
+  font-size: 50px;
+  margin-top: -5px;
+  margin-bottom: 60px;
+  text-shadow: 10px 10px 15px var(--secondary-color);
+}
+h3 {
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 50px;
+    position: sticky;
+    top: 0;
+  }
+  h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .background-hero img {
+    display: none;
+  }
+
+  .head {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-top: 20px; */
+    top: 5px;
+    background: linear-gradient(
+      109.6deg,
+      rgb(6, 2, 2) 50.4%,
+      rgb(189, 23, 125) 98.8%
+    );
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    margin-bottom: -400px;
+    width: 150px;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .navigation.active {
+    transform: translateX(0);
+  }
+
+  .navigation a {
+    font-size: 18px;
+  }
+
+  .navigation a {
+    float: none;
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .social {
+    position: fixed;
+    top: 130px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+  }
+  .social ol {
+    width: 80px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .header button {
+    margin-top: -50px;
+    width: 130px;
+    font-size: 15px;
+  }
+
+  .first-letter {
+    font-size: 24px;
+  }
+}
